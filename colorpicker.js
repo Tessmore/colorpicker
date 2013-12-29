@@ -34,8 +34,7 @@ $.fn.colorpicker = function() {
       
       picker.css({
         'display' : 'block',
-        'top'  : offset.top  + 34,
-        'left' : offset.left - 27,
+        'top'  : offset.top  + 20
       })
       .children().click(function() {        
         input
