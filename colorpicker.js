@@ -53,7 +53,7 @@ $.fn.colorpicker = function() {
           .val($(this).text())
           .css('background', $(this).text());
           
-        input.focus();
+        input.focus().trigger('change');
       });
     });
     
@@ -62,5 +62,9 @@ $.fn.colorpicker = function() {
       if (! picker.is(':hover')) 
         picker.fadeOut(200);
     });
+    
+    var color = function() {
+      return input.val();
+    }
   });
 };
